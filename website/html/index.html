@@ -12,14 +12,14 @@
 	
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/fontello/css/fontello.css" />
-	<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
 	
 </head>
 
 <body>
 
 	<header>
-		<h1><a href="#"> AGENTS OF S.H.I.E.L.D. </a></h1>
+		<h1><a href="index.html"> AGENTS OF <span class="header-effect"> S.H.I.E.L.D. </span></a></h1>
 	</header>
 	
 	<nav>
@@ -85,7 +85,7 @@
 						<li><a href="#">Shadows</a></li>
 						<li><a href="#">Heavy is the Head</a></li>
 						<li><a href="#">Making Friends and Influencing People </a></li>
-						<li><a style="margin-top: 20px;" href="#">Face My Enemy</a></li>
+						<li><a style="margin-top: 14px;" href="#">Face My Enemy</a></li>
 						<li><a href="#">A Hen in a Wolf House</a></li>
 						<li><a href="#">A Fractured House</a></li>	
 						<li><a href="#">The Writing on the Wall</a></li>
@@ -188,16 +188,18 @@
 		</div>
 		
 		<main>
-			<div class="content">
-				<p id="quote-content"> "Join S.H.I.E.L.D. - travel to exotic distant lands, meet exciting unusual people... and kill them." </p>
-				<p id="quote-owner"> ~Lance Hunter</p>
+			<div class="content-container">
+				<div class="content">
+					<p id="quote-content"> </p>
+					<p id="quote-owner"> </p>
+					<i class="icon-left-open"></i>
+					<i class="icon-right-open"></i>
+				</div>
+				
+				<div id="picture"> </div>		
+				<div style="clear: both;"> </div>
 			</div>
-			
-			<div id="picture">
-				<img src="../images/shield1.jpg" />
-			</div>		
-			<div style="clear: both;"> </div>
-			
+			<div style="clear: both;"></div>
 		</main>
 		
 	</div>
@@ -211,6 +213,8 @@
 	<script src="../javascript/jquery.scrollTo.min.js"></script>
 	
 	<script src="../javascript/sidenav-scrolling.js"> </script>
+	<script src="../javascript/main-slider.js"> </script>
+	
 </body>
 
 

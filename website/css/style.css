@@ -52,17 +52,49 @@ nav > ul > li:hover > a {
 	background-color: #763210;
 }
 
+nav > ul > li > ol {
+	list-style-type: none;
+	display: none;
+	position: relative;
+	background-color: #874321;
+	padding: 0;
+	margin: 0;
+}
+
+nav > ul > li > ol > li > a {
+	display: block;
+	height: 35px;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 18px;
+	line-height: 200%;
+}
+
+nav > ul > li > ol > li:hover > a {
+	background-color: #763210;
+}
+
+nav > ul > li:hover > ol {
+	display: block;
+	z-index: 100;
+}
+
 .container {
 	width: 100%;
 }
 
 .side-nav {
-	width: 350px;
+	width: 340px;
 	float: left;
 	background-color: #272727;
 	height: 480px;
+	padding-left: 10px;
 	overflow: scroll;
 }
+
+.side-nav::-webkit-scrollbar { width: 10px; }
+.side-nav::-webkit-scrollbar-thumb { background-color: #874321; border-radius: 20px; }
 
 .side-nav > ul {
 	list-style-type: none;
@@ -86,6 +118,25 @@ nav > ul > li:hover > a {
 
 .side-nav > ul > li > h2:hover  {
 	background-color: #303030;
+	color: #874321;
+}
+
+.side-nav >ul >li > ol {
+	display: none;
+	padding: 0px 50px;
+}
+
+.side-nav > ul > li > ol > li > a {
+	display: block;
+	height: 20px;
+	padding: 10px 0px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px; 
+	letter-spacing: 1px;
+}
+
+.side-nav > ul > li > ol > li > a:hover {
 	color: #874321;
 }
 

@@ -1,0 +1,1 @@
+<footer> Stopka raportu ósmego</footer>

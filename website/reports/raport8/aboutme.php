@@ -1,0 +1,1 @@
+<p style="text-align: center; font-size: 18px; font-style:italic;"> Kierunek: inżynieria mechatroniczna </p>

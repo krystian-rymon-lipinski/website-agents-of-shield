@@ -24,27 +24,27 @@
 	
 	<nav>
 		<ul>
-			<li><a href="#">Opis</a></li>
+			<li><a href="#" onclick="ajax(0)">Opis</a></li>
 			<li><a href="#">Postacie <i class="icon-down-dir"> </i></a>
 				<ol>
-					<li><a href="#" >Pierwszoplanowe</a></li>
-					<li><a href="#" >Drugoplanowe</a></li>
-					<li><a href="#" >Trzecioplanowe</a></li>
-					<li><a href="#" >Gościnne</a></li>	
+					<li><a href="#" onclick="ajax(1)" >Pierwszoplanowe</a></li>
+					<li><a href="#" onclick="ajax(2)">Drugoplanowe</a></li>
+					<li><a href="#" onclick="ajax(3)">Trzecioplanowe</a></li>
+					<li><a href="#" onclick="ajax(4)">Gościnne</a></li>	
 				</ol>	
 			</li>
 			<li><a href="#">Raporty <i class="icon-down-dir"> </i></a>
 				<ol>
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 1.</a></li>
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 2.</a></li>
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 3.</a></li>
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 4.</a></li>	
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 5.</a></li>	
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 6.</a></li>	
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 7.</a></li>	
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 8.</a></li>	
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 9.</a></li>	
-					<li><a href="../reports/whatever.pdf" target="_blank" >Poziom 10.</a></li>	
+					<li><a href="../reports/raport1.pdf" target="_blank" >Poziom 1.</a></li>
+					<li><a href="../reports/raport2.pdf" target="_blank" >Poziom 2.</a></li>
+					<li><a href="../reports/raport3.pdf" target="_blank" >Poziom 3.</a></li>
+					<li><a href="../reports/raport4.pdf" target="_blank" >Poziom 4.</a></li>	
+					<li><a href="../reports/raport5.pdf" target="_blank" >Poziom 5.</a></li>	
+					<li><a href="../reports/raport6.pdf" target="_blank" >Poziom 6.</a></li>	
+					<li><a href="../reports/raport7.pdf" target="_blank" >Poziom 7.</a></li>	
+					<li><a href="../reports/raport8/index.html" target="_blank" >Poziom 8.</a></li>	
+					<li><a href="../reports/raport9" target="_blank" >Poziom 9.</a></li>	
+					<li><a href="#" target="_blank" >Poziom 10. (tajny)</a></li>	
 				</ol>
 			</li>
 			<li><a href="#">Powiązania z MCU</a></li>
@@ -188,7 +188,7 @@
 		</div>
 		
 		<main>
-			<div class="content-container">
+			<div class="content-container" id="cont-container">
 				<div class="content">
 					<p id="quote-content"> </p>
 					<p id="quote-owner"> </p>
@@ -201,6 +201,44 @@
 			</div>
 			<div style="clear: both;"></div>
 		</main>
+		
+		<script>
+		
+			function ajax(subsites) {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if(this.readyState==4 && this.status==200) {
+						document.getElementById("cont-container").innerHTML = this.responseText;
+					}
+				};
+				switch(subsites) {
+				
+					case 0:
+						xhttp.open("GET", "series-description.html", true);
+						xhttp.send();
+						break;
+					case 1:
+						xhttp.open("GET", "first-list-characters.html", true);
+						xhttp.send();
+						break;
+					case 2:
+						xhttp.open("GET", "second-list-characters.html", true);
+						xhttp.send();
+						break;
+					case 3:
+						xhttp.open("GET", "third-list-characters.html", true);
+						xhttp.send();
+						break;
+					case 4:
+						xhttp.open("GET", "guest-characters.html", true);
+						xhttp.send();
+						break;
+				}
+				
+			}
+			
+		
+		</script>
 		
 	</div>
 	

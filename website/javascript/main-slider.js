@@ -1,31 +1,31 @@
 var quote1 = {
 	content: "Join S.H.I.E.L.D. - travel to exotic distant lands, meet exciting unusual people... and kill them.",
 	owner: "Lance Hunter",
-	picture: "<img src=\"../images/hunter.png\" />"
+	picture: "<img src=\"images/hunter.png\" />"
 };
 
 var quote2 = {
 	content: "We are not agents of nothing! We... are agents of S.H.I.E.L.D.!",
 	owner: "Phil Coulson",
-	picture: "<img src=\"../images/coulson.png\" />"
+	picture: "<img src=\"images/coulson.png\" />"
 }
 
 var quote3 = {
 	content: "You're just different now - and there's nothing wrong with that.",
 	owner: "Leopold Fitz",
-	picture: "<img src=\"../images/fitz.png\" />"
+	picture: "<img src=\"images/fitz.png\" />"
 }
 
 var quote4 = {
 	content: "I need a bigger gun, I guess. Or my axe. Or maybe a shotgun-axe combination of some sort.",
 	owner: "Alphonzo Mackenzie",
-	picture: "<img src=\"../images/mack.png\" />"
+	picture: "<img src=\"images/mack.png\" />"
 }
 
 var quote5 = {
 	content: "This is you trying to tell me I might be an alien! [...] Guess what? EPIC fail!",
 	owner: "Daisy Johnson",
-	picture: "<img src=\"../images/daisy.png\" />"
+	picture: "<img src=\"images/daisy.png\" />"
 }
 
 var quotes = [quote1, quote2, quote3, quote4, quote5];

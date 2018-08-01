@@ -10,8 +10,8 @@
 	<meta name="keywords" content=" słowo, klucz, kluczowe" /> 
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1" /> 
 	
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../css/fontello/css/fontello.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/fontello/css/fontello.css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
 	
 </head>
@@ -35,19 +35,19 @@
 			</li>
 			<li><a href="#">Raporty <i class="icon-down-dir"> </i></a>
 				<ol>
-					<li><a href="../reports/raport1.pdf" target="_blank" >Poziom 1.</a></li>
-					<li><a href="../reports/raport2.pdf" target="_blank" >Poziom 2.</a></li>
-					<li><a href="../reports/raport3.pdf" target="_blank" >Poziom 3.</a></li>
-					<li><a href="../reports/raport4.pdf" target="_blank" >Poziom 4.</a></li>	
-					<li><a href="../reports/raport5.pdf" target="_blank" >Poziom 5.</a></li>	
-					<li><a href="../reports/raport6.pdf" target="_blank" >Poziom 6.</a></li>	
-					<li><a href="../reports/raport7.pdf" target="_blank" >Poziom 7.</a></li>	
-					<li><a href="../reports/raport8/index.html" target="_blank" >Poziom 8.</a></li>	
-					<li><a href="../reports/raport9" target="_blank" >Poziom 9.</a></li>	
+					<li><a href="reports/raport1.pdf" target="_blank" >Poziom 1.</a></li>
+					<li><a href="reports/raport2.pdf" target="_blank" >Poziom 2.</a></li>
+					<li><a href="reports/raport3.pdf" target="_blank" >Poziom 3.</a></li>
+					<li><a href="reports/raport4.pdf" target="_blank" >Poziom 4.</a></li>	
+					<li><a href="reports/raport5.pdf" target="_blank" >Poziom 5.</a></li>	
+					<li><a href="reports/raport6" target="_blank" >Poziom 6.</a></li>	
+					<li><a href="reports/raport7.pdf" target="_blank" >Poziom 7.</a></li>	
+					<li><a href="reports/raport8" target="_blank" >Poziom 8.</a></li>	
+					<li><a href="reports/raport9" target="_blank" >Poziom 9.</a></li>	
 					<li><a href="#" target="_blank" >Poziom 10. (tajny)</a></li>	
 				</ol>
 			</li>
-			<li><a href="#">Powiązania z MCU</a></li>
+			<li><a href="#" onclick="ajax(5)">Powiązania z MCU</a></li>
 		</ul>
 	</nav>
 	
@@ -201,45 +201,6 @@
 			</div>
 			<div style="clear: both;"></div>
 		</main>
-		
-		<script>
-		
-			function ajax(subsites) {
-				var xhttp = new XMLHttpRequest();
-				xhttp.onreadystatechange = function() {
-					if(this.readyState==4 && this.status==200) {
-						document.getElementById("cont-container").innerHTML = this.responseText;
-					}
-				};
-				switch(subsites) {
-				
-					case 0:
-						xhttp.open("GET", "series-description.html", true);
-						xhttp.send();
-						break;
-					case 1:
-						xhttp.open("GET", "first-list-characters.html", true);
-						xhttp.send();
-						break;
-					case 2:
-						xhttp.open("GET", "second-list-characters.html", true);
-						xhttp.send();
-						break;
-					case 3:
-						xhttp.open("GET", "third-list-characters.html", true);
-						xhttp.send();
-						break;
-					case 4:
-						xhttp.open("GET", "guest-characters.html", true);
-						xhttp.send();
-						break;
-				}
-				
-			}
-			
-		
-		</script>
-		
 	</div>
 	
 	<footer>
@@ -248,10 +209,14 @@
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="../javascript/jquery.scrollTo.min.js"></script>
+	<script src="javascript/jquery.scrollTo.min.js"></script>
 	
-	<script src="../javascript/sidenav-scrolling.js"> </script>
-	<script src="../javascript/main-slider.js"> </script>
+	<script src="javascript/sidenav-scrolling.js"> </script>
+	<script src="javascript/main-slider.js"> </script>
+	
+	<script src="javascript/ajax/main-site-ajax.js"> </script>
+	<script src="javascript/ajax/first-line-chars-ajax.js"> </script>
+	<script src="javascript/ajax/mcu-links-ajax.js"> </script>
 	
 </body>
 

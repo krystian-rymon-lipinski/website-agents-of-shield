@@ -1,10 +1,17 @@
 h3 {
-	font-size: 40px;
+	font-size: 30px;
 	margin-left: 30px;
+	letter-spacing: 3px;
 }
 
-ul > li {
+.content-container ul > li {
 	font-size: 20px;
+	padding: 5px 0;
+}
+
+.content-container ul > li:hover {
+	color: #874321;
+	cursor: pointer;
 }
 
 

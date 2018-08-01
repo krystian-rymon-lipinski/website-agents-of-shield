@@ -98,6 +98,7 @@ nav > ul > li:hover > ol {
 
 .side-nav::-webkit-scrollbar { width: 10px; }
 .side-nav::-webkit-scrollbar-thumb { background-color: #874321; border-radius: 20px; }
+.side.nav::-webkit-scrollbar-corner { background-color: #272727; }
 .side-nav .icon-down-dir { position: absolute; right: 20px; }
 
 .side-nav > ul {
@@ -199,7 +200,7 @@ nav > ul > li:hover > ol {
 
 footer {
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	background-color: #252525;
 	text-align: center;
